@@ -1,0 +1,38 @@
+logging:
+  file:
+    name: app.log
+  level:
+    root: TRACE
+    org.hibernate.type: INFO
+    com.khanna111: TRACE
+
+
+server:
+  port: 8082
+
+#spring:
+#  jpa:
+#    open-in-view: false
+#    show-sql: true
+#    properties:
+#      hibernate.format_sql: true
+
+---
+#spring:
+#  profiles: dev
+#  datasource:
+#    password: 'sa1234'
+#    url: jdbc:mysql://localhost:3306/dev
+#    username: sa
+#    initialization-mode: always
+#  jpa:
+#    hibernate:
+#      ddl-auto: create-drop
+
+---
+#spring:
+#  profiles: test
+#  datasource:
+#    password: 'sa'
+#    url: jdbc:h2:test
+#    username: sa
